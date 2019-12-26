@@ -171,6 +171,7 @@ lazy val diodeReact = project
   .settings(publishSettings: _*)
   .settings(
     name := "diode-react",
+    crossScalaVersions += "2.13.0",
     version := s"${Version.library}.${Version.sjsReact.filterNot(_ == '.')}",
     libraryDependencies ++= Seq(
       "com.github.japgolly.scalajs-react" %%% "core" % Version.sjsReact
